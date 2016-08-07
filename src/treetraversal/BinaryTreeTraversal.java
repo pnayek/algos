@@ -33,4 +33,25 @@ public class BinaryTreeTraversal {
         }
         return result;
     }
+	
+	public List<List<Integer>> levelOrder(BinaryTreeNode root) {
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        if (root == null) return result;
+        Queue<BinaryTreeNode> queue = new LinkedList<BinaryTreeNode>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            int n = queue.size();
+            List<Integer> list = new ArrayList<Integer>(n);
+            for (int i = 0; i < n; i++) {
+                BinaryTreeNode node = queue.poll();
+                list.add(node.val);
+                BinaryTreeNode left = node.left;
+                BinaryTreeNode right = node.right;
+                if (left != null) queue.add(left);
+                if (right != null) queue.add(right);
+            }
+            result.add(list);
+        }
+        return result;
+    }
 }
