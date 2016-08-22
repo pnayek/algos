@@ -7,7 +7,8 @@ public class ValidateBst {
 	/*
 	 * Implement a function to check if a binary tree is a binary search tree
 	 * 
-	 *  CtCI 4.5
+	 * Leetcode #98, Medium
+	 * CtCI 4.5
 	 */
 	
 	private static boolean checkBstWithRange(BinaryTreeNode root, int min, int max) {
