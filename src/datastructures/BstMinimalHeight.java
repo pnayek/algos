@@ -11,6 +11,7 @@ public class BstMinimalHeight {
 	 * create a binary search tree with minimal height
 	 * 
 	 * CtCI 4.2
+	 * Leetcode #108, Medium
 	 */
 	
 	public static BinaryTreeNode createBalancedBst(int[] a, int start, int end) {
