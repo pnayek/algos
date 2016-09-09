@@ -47,7 +47,7 @@ public class CombinationSum {
 					combs.add(list);
 				}
 				else {
-					for (List l: list2) {
+					for (List<Integer> l: list2) {
 						List<Integer> nl = new ArrayList<Integer>(l);
 						nl.add(x);
 						combs.add(nl);
