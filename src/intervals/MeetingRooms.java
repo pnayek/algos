@@ -1,4 +1,4 @@
-package sorting;
+package intervals;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -14,12 +14,6 @@ public class MeetingRooms {
 	 * Leetcode #252, Easy
 	 * Facebook
 	 */
-	public class Interval {
-		int start;
-		int end;
-		Interval() { start = 0; end = 0; }
-		Interval(int s, int e) { start = s; end = e; }
-	}
 	
 	// O(n lg n), O(1)
 	public boolean canAttendMeetingsSort(Interval[] intervals) {
