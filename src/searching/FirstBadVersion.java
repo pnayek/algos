@@ -15,4 +15,9 @@ public class FirstBadVersion {
         }
         return end;
     }
+	
+	private boolean isBadVersion(int i) {
+		// dummy implementation
+		return true;
+	}
 }
